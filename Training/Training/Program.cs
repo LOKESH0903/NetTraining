@@ -9,4 +9,9 @@ namespace Training
             Console.WriteLine("Hello World!");
         }
     }
+
+    class Addition
+    {
+
+    }
 }
