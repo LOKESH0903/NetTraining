@@ -8,9 +8,22 @@ namespace Training
         {
             MathsCalculations mat = new MathsCalculations();
 
-           int result = mat.Addition(1, 2);
+            int additionResult = mat.Addition(1, 2);
 
-            Console.WriteLine("The addition value is : " + result.ToString());
+            int SubtractionResult = mat.Subtraction(1, 2);
+
+            int MultipResult = mat.Multiplication(1, 2);
+
+            double DivisionResult = mat.Division(1, 2);
+
+
+            Console.WriteLine("The addition value is : " + additionResult.ToString());
+
+            Console.WriteLine("The addition value is : " + SubtractionResult.ToString());
+
+            Console.WriteLine("The addition value is : " + MultipResult.ToString());
+
+            Console.WriteLine("The addition value is : " + DivisionResult.ToString());
 
             Console.ReadLine();
         }
