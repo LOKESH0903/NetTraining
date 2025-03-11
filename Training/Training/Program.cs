@@ -7,8 +7,12 @@ namespace Training
         static void Main(string[] args)
         {
             MathsCalculations mat = new MathsCalculations();
-            int result = mat.MathsResult(30, 10, 2);
 
+
+            //Console.WriteLine("The month of " + Months.Jan  + " number is " + (int)Months.Jan);
+            //Console.WriteLine("The month of " + Months.Feb + " number is " + (int)Months.Feb);
+
+            int result = mat.MathsResult(30, 10, (int)MathsEnum.Addition);
             Console.WriteLine("The result " + result.ToString());
 
 
