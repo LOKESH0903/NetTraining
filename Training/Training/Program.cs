@@ -7,13 +7,18 @@ namespace Training
         static void Main(string[] args)
         {
             MathsCalculations mat = new MathsCalculations();
+            const string January = "1";
+            //January = "2";
 
+            Console.WriteLine("The January value : " + January);
+
+             
 
             //Console.WriteLine("The month of " + Months.Jan  + " number is " + (int)Months.Jan);
             //Console.WriteLine("The month of " + Months.Feb + " number is " + (int)Months.Feb);
 
-            int result = mat.MathsResult(30, 10, (int)MathsEnum.Addition);
-            Console.WriteLine("The result " + result.ToString());
+            //int result = mat.MathsResult(30, 10, (int)MathsEnum.Addition);
+            //Console.WriteLine("The result " + result.ToString());
 
 
             /*
