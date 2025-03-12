@@ -7,12 +7,59 @@ namespace Training
         static void Main(string[] args)
         {
             MathsCalculations mat = new MathsCalculations();
-            const string January = "1";
+            //const string January = "1";
             //January = "2";
+            //Console.WriteLine("The January value : " + January);
+            Console.WriteLine("Please enter the value : ");
+            string numbera = Console.ReadLine();
+            int number = int.Parse(numbera);
+            switch (number)
+            {
+                case (int)Months.Jan:
+                    Console.WriteLine("Month of January");
+                    break;
+                case (int)Months.Feb:
+                    Console.WriteLine("Month of February");
+                    break;
+                case (int)Months.Mar:
+                    Console.WriteLine("Month of March");
+                    break;
+                case (int)Months.Apr:
+                    Console.WriteLine("Month of Apriil");
+                    break;
+                case (int)Months.May:
+                    Console.WriteLine("Month of May");
+                    break;
+                case (int)Months.June:
+                    Console.WriteLine("Month of June");
+                    break;
+                case (int)Months.July:
+                    Console.WriteLine("Month of July");
+                    break;
+                case (int)Months.Aug:
+                    Console.WriteLine("Month of August");
+                    break;
+                case (int)Months.Sep:
+                    Console.WriteLine("Month of September");
+                    break;
+                case (int)Months.Oct:
+                    Console.WriteLine("Month of October");
+                    break;
+                case (int)Months.Nov:
+                    Console.WriteLine("Month of November");
+                    break;
+                case (int)Months.Dec:
+                    Console.WriteLine("Month of JaDecembernuary");
+                    break;
+                default:
+                    Console.WriteLine("Out of range");
+                    break;
+            }
 
-            Console.WriteLine("The January value : " + January);
 
-             
+
+
+
 
             //Console.WriteLine("The month of " + Months.Jan  + " number is " + (int)Months.Jan);
             //Console.WriteLine("The month of " + Months.Feb + " number is " + (int)Months.Feb);
