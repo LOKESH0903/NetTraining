@@ -10,45 +10,33 @@ namespace Training
     {
         private int Id;
         private string Name;
+        private int age;
 
-        public void SetIdValue(int _id)
+        public void SetAgeValue(int _age)
         {
-            if (_id <= 0)
+            if(_age <= 18)
             {
-                throw new Exception("Id should not be less than 0");
+                throw new Exception("Age should not be less than 18");
             }
+            this.age = _age;
 
-            this.Id = _id;
         }
+       // public int GetAgeValue()
+       // {
+       //     return this.age;
+       // }
 
-        public int GetIdValue()
+        public int GetAgeValue()
         {
-            return this.Id;
-        }
-
-        public void SetNameValue(string _name)
-        {
-
-            if(string.IsNullOrEmpty(_name))
+            if (int.MinValue ==this.age)
             {
-                throw new Exception("Name should not be empty");
+                return  -1 ;
             }
-
-            this.Name = _name;
+            return this.age;
         }
 
-        public string GetNameValue()
-        {
-            //if(string.IsNullOrEmpty(this.Name))
-            //{
-            //    return "Name not assigned!";
-            //}
-            //return this.Name;
-            //return string.IsNullOrEmpty(this.Name) ? "Name not assigned!" : this.Name;
 
-
-            return !string.IsNullOrEmpty(this.Name) ? this.Name : "Name not assigned!";
-        }
+       
 
 
     }

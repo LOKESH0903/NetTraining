@@ -8,8 +8,15 @@ namespace Training
         static void Main(string[] args)
         {
             UserDetails U = new UserDetails();
-            //U.SetNameValue("Krishna");
-            Console.WriteLine("The name value : " + U.GetNameValue());
+            try
+            {
+                U.SetAgeValue(10);
+                Console.WriteLine("Age: " + U.GetAgeValue());
+            }
+            catch(Exception ex)
+            {
+                Console.WriteLine("Error: " + ex.Message);
+            }
             Console.ReadLine();
         }
     }
