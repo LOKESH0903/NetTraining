@@ -10,10 +10,14 @@ namespace Training
             UserDetails U = new UserDetails();
             try
             {
-                U.SetAgeValue(10);
-                Console.WriteLine("Age: " + U.GetAgeValue());
+                U.SetAgeValue(17);
+                // string msg;
+                // Console.WriteLine("Age:  " + U.GetAgeValue(out msg));
+                // Console.WriteLine("Message : " + msg);
+
+                Console.WriteLine(" " + U.UserInformation);
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 Console.WriteLine("Error: " + ex.Message);
             }
