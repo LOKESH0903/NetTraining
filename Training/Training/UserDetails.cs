@@ -10,6 +10,9 @@ namespace Training
     {
         private int Id;
         private string Name;
+        private double Salary;
+
+
 
         public void SetIdValue(int _id)
         {
@@ -29,7 +32,7 @@ namespace Training
         public void SetNameValue(string _name)
         {
 
-            if(string.IsNullOrEmpty(_name))
+            if (string.IsNullOrEmpty(_name))
             {
                 throw new Exception("Name should not be empty");
             }
@@ -49,6 +52,29 @@ namespace Training
 
             return !string.IsNullOrEmpty(this.Name) ? this.Name : "Name not assigned!";
         }
+
+
+        public int UserId
+        {
+            set
+            {
+                //if (value <= 0)
+                //{
+                //    throw new Exception("Id should not be less than 0");
+                //}
+
+                this.Id = value;
+            }
+
+            get
+            {
+                return this.Id;
+            }
+        }
+
+        public string UserName { get; set; }
+
+
 
 
     }
