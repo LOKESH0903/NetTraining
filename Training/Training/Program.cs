@@ -15,6 +15,26 @@ namespace Training
                 // Console.WriteLine("Age:  " + U.GetAgeValue(out msg));
                 // Console.WriteLine("Message : " + msg);
 
+                string petName = null;  // dog ( Dog -> dog
+                Pets P = new Pets();
+                P.PetDetails(ref petName); // passing the value types by reference.
+
+                P.PetsName("cat");
+                P.PetsName();
+
+                P.AllPetDetails(out petName, "Goat", "rat");
+                P.AllPetDetails(out petName, "Goat");
+
+                /*
+                 * in parameters (normal , value).
+                 * out
+                 * ref
+                 * optional / default 
+                 * dynamic
+                 * params
+                 */
+
+
                 Console.WriteLine(" " + U.UserInformation);
             }
             catch (Exception ex)

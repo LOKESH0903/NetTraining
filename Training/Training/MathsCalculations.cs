@@ -93,5 +93,33 @@ namespace Training
             return a / b;
         }
     }
+
+    class Pets
+    {
+        public void PetDetails(ref string names)
+        {
+            if( !string.IsNullOrEmpty(names) && names.ToLower() == "dog")
+            {
+                Console.WriteLine("I am dog...");
+            }
+            //else
+            //{
+            //    names = "cat";
+            //}    
+
+            names = "horse";
+        }
+
+        public void PetsName(string _name = "hen")
+        {
+            Console.WriteLine("Default parameter value : " + _name);
+        }
+
+
+        public void AllPetDetails(out string finalName, string name, string defaultName = "cat")
+        {
+            finalName = "GOAT";
+        }
+    }
 }
 
