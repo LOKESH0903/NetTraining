@@ -9,7 +9,22 @@ namespace Training
         {
             try
             {
-              
+                WholesSales w = new WholesSales();
+
+
+                w.ShopDetails();
+
+
+                ((Shop)w).ShopDetails();
+
+                Shop s = new WholesSales();
+
+                WholesSales w1 = new Shop();
+
+
+                s.ShopDetails();
+
+
             }
             catch (Exception ex)
             {
