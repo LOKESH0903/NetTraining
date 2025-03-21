@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Training
 {
-    public class Shop
+    public  class Shop
     {
         public string ShopeName = "Toys";
         public void ShopGoods()

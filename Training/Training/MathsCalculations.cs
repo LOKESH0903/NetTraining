@@ -121,5 +121,34 @@ namespace Training
             finalName = "GOAT";
         }
     }
+
+    class methodoverloading
+    {
+        public int Addition()
+        {
+            return 10 + 20;
+        }
+
+
+        public int Addition(int a)
+        {
+            return a;
+        }
+
+        public double Addition(double a)
+        {
+            return a;
+        }
+
+        public void Addition(out int returnValue)
+        {
+            returnValue = 10 + 40;
+        }
+
+        public int Addition(int a, int b)
+        {
+            return a + b;
+        }
+    }
 }
 
