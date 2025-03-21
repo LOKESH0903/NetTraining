@@ -15,6 +15,19 @@ namespace Training
                 //w.ShopDetails();
                 //Shop s = new WholesSales();
 
+
+                FirstCry fc = new FirstCry();
+                //fc.ShoreAreaName("");
+                ((ToysSupplier)fc).ShopName(); // Method hiding
+                ((ToysSupplier)fc).ShoreAreaName(""); //Method overriding
+
+
+                ToysSupplier t = new ToysSupplier();
+                t.ShoreAreaName("");
+
+
+
+
                 /*
                  inheritance (base - child classs)
                 method hiding
@@ -28,14 +41,14 @@ namespace Training
                  
                  */
 
-                methodoverloading m = new methodoverloading();
-                int a;
-                m.Addition(out a);
-                Console.WriteLine("no parameterss : " + m.Addition());
-                Console.WriteLine("no parameterss : " + m.Addition(15.6));
-                Console.WriteLine("no parameterss : " + m.Addition(2));
-                Console.WriteLine("no parameterss : " + a);
-                Console.WriteLine("no parameterss : " + m.Addition(2, 9));
+                //methodoverloading m = new methodoverloading();
+                //int a;
+                //m.Addition(out a);
+                //Console.WriteLine("no parameterss : " + m.Addition());
+                //Console.WriteLine("no parameterss : " + m.Addition(15.6));
+                //Console.WriteLine("no parameterss : " + m.Addition(2));
+                //Console.WriteLine("no parameterss : " + a);
+                //Console.WriteLine("no parameterss : " + m.Addition(2, 9));
 
 
 
